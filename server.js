@@ -50,8 +50,8 @@ passport.serializeUser(function(user, done) {
 app.use(passport.initialize());
 app.use(flash());
 
-// app.use("/api",routes);
-app.use(routes);
+app.use("/api",routes);
+
 
 app.listen(3000, function() {
   console.log("app is running on local 3000");
